@@ -1,0 +1,4 @@
+<%= render 'form' %>
+<div id="destroy">
+	<%= link_to 'Delete', purchase_path(@purchase), :method =>:delete,  data: { :confirm => 'Are you sure? All purchase data will be lost!' } %>
+</div>

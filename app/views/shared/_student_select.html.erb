@@ -1,0 +1,17 @@
+<div id="student-list-select">
+	<select id="student-list-display" name="<%= @select_name %>">
+
+		<% if (@no_student_option) %>
+			<option value="nil">No Student</option>
+		<% end %>
+		<% @students.each do |student| %>
+			<%= render :partial => 'shared/option', 
+				:locals => {
+					:name => student.name, 
+					:id => student.id, 
+					:selected => (@selected == student.id && "selected") || "" 
+				} 
+			%>
+	    <% end %>
+	</select>
+</div>

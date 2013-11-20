@@ -1,0 +1,28 @@
+@import 'base';
+
+#back {
+	float:left;
+	margin-bottom:20px;
+}
+
+#edit {
+	float:right;
+}
+
+#student-page {
+	#page-title {
+		clear:both;
+		font-size:$large;
+		margin-bottom:12px;
+	}
+}
+
+.student-group {
+	header {
+		font-weight:bold;
+	}
+}
+
+.student-group-wrapper {
+	padding:5px 5px 5px 0px;
+}

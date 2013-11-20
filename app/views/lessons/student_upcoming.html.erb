@@ -1,0 +1,14 @@
+<div class="upcoming-by-student">
+	<% @lessons.each do |lesson| %>
+		<div class="lesson-item">
+			<div class="lesson-name lesson-detail">
+				<%= link_to lesson_path(lesson.id) do %>
+					<%= lesson.student.name %>
+				<% end %>
+			</div>
+			<div class="lesson-schedule lesson-detail">
+				<%= lesson.schedule.in_time_zone(@user.get_user_timezone_code).strftime "%-I:%M%P %B %e, %Y" %>
+			</div>
+		</div>
+	<% end %>
+</div>

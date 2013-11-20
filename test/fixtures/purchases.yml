@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: Beethoven
+  price: 25.00
+  purchased: false
+  student: 
+
+two:
+  title: MyString
+  price: 15.74
+  purchased: true
+  student: 

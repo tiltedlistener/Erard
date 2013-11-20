@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: John Keegan
+  email: keegan@gmail.com
+  phone: 2442121234
+  address: "123 fake street"
+  billable: true
+
+two:
+  name: Joan Keegan
+  email: Jkeegan@gmail.com
+  phone: 2442121234
+  address: "123 fake street"
+  billable: false

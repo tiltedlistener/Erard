@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: "Corey Kahler"
+  email: corey@gmail.com
+  session_id: "5eee38381388b6f30efdd5c5c6f067dbf32c0bb3"
+  hashed_password: "S#!um6C=zm{l8|ZtDRm|TBab65230f1e43a39513d2943bbd70e3974ec9b0d3"
+  #session id comes from the seed - Digest::SHA1.hexdigest('stuff')
+  timezone: 2
+two:
+  name: "Carrie Purcell"
+  email: carrie@gmail.com
+  session_id: "5eee38381388b6f30efdd5c5c6f067dbf32c0bb3"
+  hashed_password: "S#!um6C=zm{l8|ZtDRm|TBab65230f1e43a39513d2943bbd70e3974ec9b0d3"
+  #session id comes from the seed - Digest::SHA1.hexdigest('stuff')
+  #password is "stuffed"
+  timezone: 2

@@ -1,0 +1,5 @@
+<div id="back"><%= link_to "Back to Student", student_path(@student) %></div>
+<div id="page-title"><h1>New Contact</h1></div>
+<div id="main">
+	<%= render :partial => 'form', :locals => { :sid => @sid, :form_name => @form_name } %>
+</div>

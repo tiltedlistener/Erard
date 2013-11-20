@@ -1,0 +1,7 @@
+<div id="page-title"><h1>Edit Lesson</h1></div>
+<div id="main">
+	<%= render 'form' %>	
+	<div id="destroy">
+		<%= link_to 'Delete', lesson_path(@lesson), :method =>:delete,  data: { :confirm => 'Are you sure? All lesson data will be lost!' } %>
+	</div>
+</div>

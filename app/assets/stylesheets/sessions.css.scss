@@ -1,0 +1,38 @@
+
+@import 'base';
+
+#beta-explain {
+	margin-bottom:40px;
+}
+
+#notify-after-beta {
+	@include round-corners(4px);
+	background:$red;
+	margin-bottom:40px;
+	padding:20px 20px;	
+	width:22%;
+}
+
+#remote_notify {
+	#email {
+		margin-bottom:15px;
+		width:200px;
+	}
+	input[type="submit"] {
+		clear:both;
+		display:block;
+	}
+}
+
+#login-wrapper {
+	form {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	#password,
+	#email {
+		margin-bottom:15px;
+		width:200px;
+	}
+}

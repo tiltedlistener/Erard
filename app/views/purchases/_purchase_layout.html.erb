@@ -1,0 +1,7 @@
+<% @purchases.each do |purchase| %>
+	<div class="purchase-item">
+		<div class="purchase-title purchase-detail"><%= purchase.title %></div>
+		<div class="purchase-price purchase-detail"><%= purchase.price_formatted %></div>
+		<div class="purchase-notify purchase-detail" meta-purchase="<%= purchase.id %>">Purchased?</div>
+	</div>
+<% end %>

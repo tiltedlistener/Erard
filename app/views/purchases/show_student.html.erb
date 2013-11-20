@@ -1,0 +1,6 @@
+<div id="page-title"><h1><%= @name %>'s Purchases</h1></div>
+
+<div id="main">
+	<%= render 'purchase_layout' %>
+	<%= render :partial => 'purchased_layout' if @purchased.count > 0 %>
+</div>

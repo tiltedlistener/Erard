@@ -1,0 +1,12 @@
+<div id="page-title"><h1>Lesson for <%= @lesson.student.name %></h1></div>
+<div id="main">
+	<div class="lesson-date"><%= @formatted_time %></div>
+	<div class="lesson-log has-edit">
+		<div class="inner static-content"><%= @lesson.log %></div>
+		<div class="edit">Edit</div>
+		<div class="lesson-log-edit edit-region">
+			<%= text_area_tag 'Log', @lesson.log, :rows => 10, :cols => 25 %>
+			<button>Update</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+
+<div id="student-page">
+	<div id="back"><%= link_to "Back to Dashboard", dashboard_path %></div>
+	<div id="edit"><%= link_to 'Edit', edit_student_path(@student) %></div>
+
+	<div id="page-title"><%= @student.name %></div>
+	<div id="main">
+		<div id="lesson-section" class="student-group">
+			<div class="student-group-wrapper">
+				<header>Upcoming Lessons</header>
+				<div class="student-group-content" id="upcoming-lessons-individual">
+					<div class="inner"></div>
+					<%= render 'shared/loader' %>
+					<%= render 'shared/form_error' %>	
+				</div>
+			</div>
+		</div>
+
+<%
+=begin
+		@HOLDING
+		<div id="invoice-section" class="student-group">
+			<div class="student-group-wrapper">
+				<header>Current Invoices</header>
+				<div class="student-group-content">
+
+				</div>				
+			</div>
+		</div>
+=end
+%>
+
+		<div id="contact-section" class="student-group">
+			<div class="student-group-wrapper">
+				<header>Contacts</header>
+				<div class="student-group-content">
+					<%= render "list_contact" %>
+				</div>
+				<div id="add-contact">
+					<%= link_to 'Add Contact', new_contact_path + '/' + @student.id.to_s %></div>
+				</div>				
+			</div>
+		</div>
+
+	</div>
+</div>
+

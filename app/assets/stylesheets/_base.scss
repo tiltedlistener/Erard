@@ -1,0 +1,49 @@
+/**
+	Main Color Scheme
+**/
+$red: #b82a1e ;
+$blue: #2b4f81;
+$tan: rgba(202,195,141,0.5);
+$grey: #6b6d5f;
+$mainFont : 'Raleway', sans-serif;
+$headerFont : 'Lobster', sans-serif;
+
+/** Font Sizes **/
+$large: 24px;
+
+/** Common Patterns **/
+$zero: 0px;
+$balanced: 0 auto;
+
+/** Mixins **/
+@mixin round-corners($amount: $default_rounded_amount) {
+  border-radius: $amount;
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+}
+
+
+@mixin box-shadow-default {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+@mixin active-button {
+	background-image: linear-gradient(bottom, rgb(168,168,165) 42%, rgb(222,223,216) 71%);
+	background-image: -o-linear-gradient(bottom, rgb(168,168,165) 42%, rgb(222,223,216) 71%);
+	background-image: -moz-linear-gradient(bottom, rgb(168,168,165) 42%, rgb(222,223,216) 71%);
+	background-image: -webkit-linear-gradient(bottom, rgb(168,168,165) 42%, rgb(222,223,216) 71%);
+	background-image: -ms-linear-gradient(bottom, rgb(168,168,165) 42%, rgb(222,223,216) 71%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.42, rgb(168,168,165)),
+		color-stop(0.71, rgb(222,223,216))
+	);
+
+	
+}
+ 

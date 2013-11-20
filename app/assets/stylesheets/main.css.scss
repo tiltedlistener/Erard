@@ -1,0 +1,248 @@
+@import 'base';
+
+
+/** Application wide styles **/
+
+body {
+	border:0;
+	font-family: Helvetica, sans-serif;
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4 {
+	font-weight:300;
+}
+
+a,
+a:visited {
+	color:$red;
+	text-decoration: none;
+}
+
+label {
+	display:block;
+}
+
+input[type="text"] {
+	display:block;
+	width:200px;
+}
+
+input[type="submit"] {
+	@include round-corners(4px);
+	background:rgb(222, 223, 216);
+	border:none;
+	color:$grey;
+	cursor:pointer;
+	font-size:16px;
+	margin-top:10px;
+	padding:8px 20px;
+}
+
+input[type="submit"]:active {
+	background:#8c8d87;
+}
+
+.form-processsing input {
+	color:rgba(0,0,0,0.5);
+}
+
+.section-loader,
+.form-loader {
+	display:none;
+	float:left;
+	margin-left:10px;
+	margin-top:16px;
+	width:20px;
+	img {
+		height:auto;
+		width:100%;
+	}
+}
+
+.section-loader {
+	display:block;
+}
+
+.loaded .section-loader {
+	display:none;
+}
+
+.form-error {
+	color:$red;
+	display:none;
+}
+
+.submit-load-group {
+	clear:both;
+	height:60px;
+	width:100%;
+	input[type="submit"] {
+		display:block;
+		float:left;
+	}
+}
+
+.field-error {
+	border:1px solid $red;
+}
+
+.field-error-message {
+	color:$red;
+}
+
+.form-submit-processing {
+	opacity:0.5;
+}
+
+.form-success {
+	display:none;
+}
+
+
+/** Helper Classes **/
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.half {
+	width: 50%;
+}
+
+.oneThird {
+	width:30%;
+}
+
+.twoThird {
+	width:60%;
+}
+
+.tab-page {
+	clear:both;
+	margin:20px 0px;
+}
+
+/** Page **/
+body {
+	background:$tan;
+}
+
+#main-header-inner,
+#page {
+	background:white;
+	margin:$balanced;
+	width:980px;
+}
+
+#page {
+	min-height:800px;
+	padding:30px 20px;
+}
+
+#main-header-inner {
+	background:none;
+}
+
+#page-title {
+	clear:both;
+	margin:$zero;
+
+	h1,h2,h3,h4 {
+		font-family: $mainFont;
+		font-weight:300;
+		margin-top:0px;
+	}
+}
+
+/** Header **/
+
+#main-header {
+	background-color:$blue;
+	height:60px;
+	margin:$zero;
+	padding:$zero;
+}
+
+#log-group {
+	float:right;
+	margin-top:21px;
+	a {
+		color:white;
+	}
+}
+
+#logo {
+	float:left;
+	font-family:$headerFont;
+	margin-top:8px;
+	h1 {
+		color:white;
+		margin:$zero;
+		font-weight:normal;
+	}
+	a, a:active {
+		color:white;
+	}
+}
+
+/** Footer **/
+#main-footer {
+	background:$grey;
+	height:100px;
+}
+
+/** Lightbox **/
+#lightbox {
+	background:rgba(255,255,255,0.6);
+	display:none;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:100;
+}
+
+#lightbox-wrapper {
+	background:white;
+	border: 4px solid $tan;
+	display:none;
+	min-height:400px;
+	padding:10px;
+	position:absolute;
+	top:30%;
+	left:40%;
+	width:400px;
+	z-index:101;
+}
+
+#lightbox-title {
+	font-weight: 100;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+/** Common Tasks **/
+#destroy {
+    @include round-corners(4px);
+	background: black;
+	float: left;
+	padding: 5px;
+	text-transform:uppercase;
+	a {
+		color:white;
+	}
+}
+
+.edit {
+	color:$red;
+	cursor:pointer;
+	display:none;
+	font-size:12px;
+}

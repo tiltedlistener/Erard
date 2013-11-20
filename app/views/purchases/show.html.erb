@@ -1,0 +1,7 @@
+<div id="page-title"><h1><%= @purchase.title %></h1></div>
+<div id="main">
+	<div id="purchase-individual-detail">
+		<div class="purchase-price purchase-detail"><%= @purchase.price_formatted %></div>
+		<div class="purchase-notify purchase-detail" meta-purchase="<%= @purchase.id %>">Purchased?</div>
+	</div>
+</div>

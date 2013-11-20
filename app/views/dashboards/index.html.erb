@@ -1,0 +1,35 @@
+<div id="page-title"><h1>Dashboard</h1></div>
+
+<div id="main">
+	<div id="unresolved" class="block">
+		<%= render 'inner_tab' %>
+	</div>
+	<div id="common-tasks">
+		<div class="common-task-item">
+			<div id="review-students-tab" meta-tab="review-students" class="task active">Students</div>
+			<div id="review-lessons-tab" meta-tab="upcoming-lessons-all" class="task">Lessons</div>
+			<div id="review-purchases-tab" meta-tab="review-purchases" class="task">Purchases</div>		
+		</div>
+	</div>
+	<div id="tasks-tabs-wrapper">
+		<div id="inner-tab-wrapper">
+			<div id="review-students" class="tab-page active">
+				<%= render 'inner_tab' %>
+				<div id="new-student-link" class="new-button-link"><a>New Student</a></div>	
+				<%= link_to 'Student Controller', students_path %>					
+			</div>
+			<div id="upcoming-lessons-all" class="tab-page">
+				<%= render 'inner_tab' %>
+				<div id="new-lesson-link" class="new-button-link"><a>New Lesson</a></div>		
+				<%= link_to 'Lesson Controller', lessons_path %>	
+			</div>
+			<div id="review-purchases" class="tab-page">
+				<%= render 'inner_tab' %>
+				<div id="new-purchase-link" class="new-button-link"><a>New Purchase</a></div>		
+				<%= link_to 'Purchase Controller', purchases_path %>	
+			</div>			
+		</div>
+	</div>
+
+
+</div>

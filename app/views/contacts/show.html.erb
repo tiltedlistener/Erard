@@ -1,0 +1,11 @@
+<div id="back"><%= link_to "Back to " + @student.name, student_path(@student) %></div>
+<div id="page-title"><%= link_to 'Edit', edit_contact_path(@contact) %></div>
+<div id="page-title"><h1><%= @contact.name %></h1></div>
+<div id="main">
+	<div id="contact-details">
+		<div class="email"><%= @contact.email %></div>
+		<div class="phone"><%= @contact.phone %></div>
+		<div class="address"><%= @contact.address %></div>
+		<div class="billable"><%= @contact.billable %></div>
+	</div>
+</div>

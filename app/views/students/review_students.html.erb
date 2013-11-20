@@ -1,0 +1,12 @@
+<h2 class="title">Students</h2>
+<div class="tab-content">
+	<% @students.each do |student| %>
+		<div class="student-item">
+			<div class="student-name">
+				<%= link_to student_path(student) do %>
+					<%= student.name %>
+				<% end %>
+			</div>
+		</div>
+	<% end %>
+</div>

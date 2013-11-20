@@ -1,0 +1,16 @@
+<div id="new-student" class="form tab-page loaded">
+	<h2 class="title">Add New Student</h2>
+	<div class="tab-content">
+		<%= form_tag({:controller=> :students, :action => :create }, :method=>:post, :remote=>true, :id=>"new_student")  do %>
+			<%= label_tag "Name" %>
+			<%= text_field_tag 'new_name' ,'', :size => 80 %>
+			<div class="submit-load-group">
+				<%= submit_tag "Create", :class => 'submit_button' %>
+				<%= render 'form_loader' %>
+			</div>
+			<%= render "form_error" %>
+			<%= render 'success' %>
+		<% end %>
+	</div>
+	<%= render 'loader' %>
+</div>

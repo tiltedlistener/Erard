@@ -1,0 +1,67 @@
+@import 'base';
+
+#common-tasks {
+	height: 60px;
+}
+
+.task {
+	@include round-corners(4px);
+	background:$red;
+	color:white;
+	cursor:pointer;
+	float:left;
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin-right: 30px;
+	padding:10px 0px;
+	text-align:center;
+	width:160px;
+}
+
+.task.active {
+	background:rgba(184, 42, 30, 0.6)
+}
+
+.loader {
+	display:none;
+}
+
+#tasks-loader {
+	clear:both;
+	position:relative
+}
+
+/** Tab Controls for Main Group */
+#inner-tab-wrapper {
+	min-height: 100px;
+}
+
+#tasks-tabs-wrapper {
+	position:relative;
+}
+
+.tab-page {
+	position:absolute;
+	clear:both;
+	display:none;
+	width:100%;
+	min-height:100px;
+}
+.tab-page.active {
+	display:block;
+}
+
+/* Student Section */
+.new-button-link {
+	@include round-corners(4px);
+	background:$red;
+	margin-top:30px;
+	padding:3px;
+	text-align:center;
+	width:80px;
+	a {
+		color:white;
+		font-weight:100;
+		font-size:12px;
+	}
+}

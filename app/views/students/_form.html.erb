@@ -1,0 +1,10 @@
+<%= form_for @student, :remote=>true, :html => {:id => @form_name } do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<div class="submit-load-group">
+		<%= f.submit %>
+		<%= render :partial =>'shared/form_loader' %>
+	</div>
+	<%= render :partial =>"shared/form_error" %>
+	<%= render :partial =>'shared/success' %>
+<% end %>

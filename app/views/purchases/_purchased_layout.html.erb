@@ -1,0 +1,10 @@
+<h3 class="sub-title">Past Purchases</h3>
+<% @purchased.each do |purchase| %>
+	<div class="purchase-item">
+		<div class="purchase-title purchase-detail"><%= purchase.title %></div>
+		<div class="purchase-price purchase-detail"><%= purchase.price_formatted %></div>
+		<% if @show_student && !purchase.student.nil? %>
+			<div class="purchase-name purchase-detail"><%= purchase.student.name %></div>
+		<% end %>
+	</div>
+<% end %>

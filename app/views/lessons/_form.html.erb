@@ -1,0 +1,29 @@
+<%= form_for @lesson, :remote=>true, :html => { :id => @form_name } do |f| %>
+	
+	<% if (@form_name == 'edit_lesson') %>
+		<%= @student.name %>
+		<%= hidden_field_tag @select_name, @student.id %>
+	<% else %>
+		<%= render :partial =>'shared/student_select' %>
+	<% end %>
+	
+	<div class="date-wrapper">
+		<%= text_field_tag 'lesson[time][month]', @month, :maxlength => 2, :class => 'date-input exception-textLength numbers' %>
+		<%= text_field_tag 'lesson[time][day]', @day, :maxlength => 2, :class => 'date-input exception-textLength numbers' %>	
+		<%= text_field_tag 'lesson[time][year]', @year, :maxlength => 2, :class => 'date-input exception-textLength numbers' %>	
+	</div>
+
+	<div class="time-wrapper">
+		<%= text_field_tag "lesson[time][hour]", @hour, :maxlength => 2, :class => 'date-input exception-textLength numbers' %>
+		<%= text_field_tag "lesson[time][minute]", @minute, :maxlength => 2, :class => 'date-input exception-textLength numbers' %>
+		<%= select_tag "lesson[time][ampm]",  options_for_select([['pm', 0], ['am', 1]], :selected=>@time_of_day) %>
+	</div>
+
+	<div class="submit-load-group">
+		<%= f.submit %>
+		<%= render :partial =>'shared/form_loader' %>
+	</div>
+
+	<%= render :partial =>"shared/form_error" %>
+	<%= render :partial =>'shared/success' %>
+<% end %>

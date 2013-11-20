@@ -1,0 +1,26 @@
+<h1 id="page-title">Login</h1>
+
+<div id="beta-explain"><p><%= t(:beta_explain) %></p></div>
+
+<div id="login-wrapper" class="half left">
+	<%= form_tag session_path do %>
+		<div class="field">
+			<%= label_tag :email %><br/>
+			<%= text_field_tag :email %>
+		</div>
+		<div class="field">
+			<%= label_tag :password %><br/>
+			<%= password_field_tag :password %>
+		</div>
+		<div class="actions">
+			<%= submit_tag "Log In" %>
+		</div>
+	<% end %>
+</div>
+
+<div id="notify-after-beta" class="half left">
+	<%= form_tag({:action => :notify }, :method=>:post, :remote=>true, :id=>"remote_notify")  do %>
+		<%= text_field_tag 'email' ,'', :size => 80 %>
+		<%= submit_tag "Let me know" %>
+	<% end %>
+</div>

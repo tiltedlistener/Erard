@@ -1,0 +1,29 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'base';
+
+#home-explain {
+	color:$red;
+	font-size:22px;	
+}
+
+#start-button-wrapper {
+	margin-top: 28px;
+}
+
+#get-started {
+	background:$red;
+	font-family:$headerFont;
+	letter-spacing: 1px;
+	font-size: 28px;
+	@include round-corners(4px);
+	margin:$balanced;
+	padding:10px 0px;
+	text-align:center;
+	width:200px;
+	a {
+		color:white;
+	}
+}

@@ -1,0 +1,8 @@
+<div id="contact-list">
+	<% @contacts.each do |contact| %>
+	    <div class="contact-item">
+	      <div class="contact-detail name"><%= link_to contact.name, contact_path(contact) %></div>
+	      <div class="contact-detail email"><%= contact.email %></div>
+	    </div>
+    <% end %>
+</div>

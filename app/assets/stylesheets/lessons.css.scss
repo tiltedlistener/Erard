@@ -1,0 +1,55 @@
+// Place all the styles related to the Lessons controller here.
+// They will automatically be included in application.css
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lesson-item {
+	clear:both;
+	height:20px;
+	margin-bottom:20px;
+	.lesson-detail {
+		float:left;
+	}
+	.lesson-detail.lesson-schedule {
+		float:right;
+	}
+}
+
+.unresolved-by-lesson {
+
+	clear:both;
+	height:80px;
+
+	.lesson-item {
+		clear:none;
+		float:left;
+		margin-right:30px;
+	}
+
+	.lesson-detail {
+		float:none;
+	}
+
+	.lesson-detail.lesson-schedule {
+		float:none;
+	}
+}
+
+.date-wrapper,
+.time-wrapper {
+	clear:both;
+	min-height:30px;
+	input[type="text"].date-input {
+		float:left;
+		width:20px;
+	}
+}
+
+#upcoming-lessons-individual {
+	.lesson-schedule {
+		float:left;
+	}
+}
+
+.lesson-log-edit {
+	display:none;
+}

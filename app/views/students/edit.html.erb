@@ -1,0 +1,11 @@
+	<div id="student-edit-page">
+	<div id="back"><%= link_to "Back to Student", student_path %></div>
+	<div id="page-title">Edit <%= @student.name %></div>
+	<div id="main">
+		<%= render 'form', :locals => { :form_name => @form_name } %>
+		<div id="destroy">
+			<%= link_to 'Delete', student_path(@student), :method =>:delete,  data: { :confirm => 'Are you sure? All student data will be lost!' } %>
+		</div>
+	</div>
+</div>
+

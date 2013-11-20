@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one: 
+  schedule: "2014-09-19 23:12:00 UTC"
+  paid: false
+  resolved: false
+two: 
+  schedule: "2013-12-19 23:12:00 UTC"
+  paid: false
+three: 
+  schedule: "2014-09-19 23:12:00 UTC"
+  paid: true
+four:
+  schedule: "2012-09-19 23:12:00 UTC"
+  paid: false
