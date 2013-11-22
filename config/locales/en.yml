@@ -20,8 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-
   home_about: "Hello. Erard is a simple online application that helps private piano teachers streamline the management of their students, their business, and their lives."
   beta_explain: "Erard is currently in beta and unavailble to the general public. If you are in the test group, please login."
 
