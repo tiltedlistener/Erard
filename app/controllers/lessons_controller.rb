@@ -203,9 +203,7 @@ class LessonsController < ApplicationController
 	    		format.js { render :text=>"No unresolved lessons", :layout => false, :status => :ok }
 	    		format.html { render "get_unresolved_lessons" }
 	  		end
-	  	end
-
-			
+	  	end			
 	end	
 
   private

@@ -210,11 +210,21 @@ class LessonsControllerTest < ActionController::TestCase
 
 	test "get unresolved" do 
 		get :get_unresolved_lessons
-		assert_equal 2, assigns(:lessons).count
+		assert_equal 0, assigns(:lessons).count
 
 		get :get_unresolved_lessons, :format => :js
 		assert_response :success
-		assert_equal 2, assigns(:lessons).count
+		assert_equal 0, assigns(:lessons).count
+
+		@l2.schedule = Time.now - (52*7*24*60*60)
+		@l2.save
+		get :get_unresolved_lessons, :format => :js
+		assert_equal 1, assigns(:lessons).count		
+
+		@l2.resolved = true
+		@l2.save
+		get :get_unresolved_lessons, :format => :js
+		assert_equal 0, assigns(:lessons).count		
 	end
 
 
