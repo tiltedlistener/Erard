@@ -17,10 +17,3 @@
 		</div>
 	<% end %>
 </div>
-
-<div id="notify-after-beta" class="half left">
-	<%= form_tag({:action => :notify }, :method=>:post, :remote=>true, :id=>"remote_notify")  do %>
-		<%= text_field_tag 'email' ,'', :size => 80 %>
-		<%= submit_tag "Let me know" %>
-	<% end %>
-</div>
