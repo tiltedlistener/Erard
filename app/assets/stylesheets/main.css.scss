@@ -129,9 +129,6 @@ input[type="submit"]:active {
 }
 
 /** Page **/
-body {
-	background:$tan;
-}
 
 #main-header-inner,
 #page {
@@ -193,7 +190,7 @@ body {
 
 /** Footer **/
 #main-footer {
-	background:$grey;
+	background:$blue;
 	height:100px;
 }
 
