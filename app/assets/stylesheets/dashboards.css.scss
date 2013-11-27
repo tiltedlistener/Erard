@@ -51,10 +51,10 @@
 	display:block;
 }
 
-/* Student Section */
 .new-button-link {
 	@include round-corners(4px);
 	background:$red;
+	cursor:pointer;
 	margin-top:30px;
 	padding:3px;
 	text-align:center;
@@ -64,4 +64,9 @@
 		font-weight:100;
 		font-size:12px;
 	}
+}
+
+.dashboard-link {
+	margin-top:10px;
+	padding-top:10px;
 }
