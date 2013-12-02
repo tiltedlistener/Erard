@@ -1,5 +1,8 @@
 Lament::Application.routes.draw do
+
   root :to => "home#index"
+
+  get "/calendar"  => "calendar#index"
 
   resources :users
 

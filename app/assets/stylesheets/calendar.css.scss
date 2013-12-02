@@ -1,0 +1,28 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'base';
+
+#calendar {
+	border-collapse:collapse;
+}
+
+.calendar-cell {
+	border:1px solid #d4d4d4;
+	height: 10px;
+	width:100px;
+}
+
+.even.calendar-30min {
+	.calendar-cell {
+		border-bottom: 1px solid #f0f0f0;
+	}
+}
+
+.calendar-cell.time,
+.even.calendar-30min .calendar-cell.time {
+	border:none;
+	border-bottom:none;
+	text-align:right;
+}

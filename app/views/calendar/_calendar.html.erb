@@ -1,0 +1,28 @@
+<table id="calendar">
+	<tr class="table-header">
+		<th></th>
+		<th>Sunday</th>		
+		<th>Monday</th>
+		<th>Tuesday</th>
+		<th>Wednesday</th>
+		<th>Thursday</th>
+		<th>Friday</th>
+		<th>Saturday</th>
+	</tr>
+
+	<% (0..27).each do |i| %>
+		<% if (i % 2 == 0) %>
+			<tr class="calendar-30min even">
+				<td class="calendar-cell time"> <%= (((i/2) + 8) > 12) ? (((i/2) + 8) - 12) : ((i/2) + 8) %>:00</div>
+		<% else %>
+			<tr class="calendar-30min odd">
+				<td class="calendar-cell time"></div>
+		<% end %>
+
+		<% (1..7).each do |j| %>
+			<td class="calendar-cell"> </td>
+		<% end %>
+		</tr>
+	<% end %>	
+
+</table>
