@@ -1,4 +1,9 @@
 class CalendarController < ApplicationController
-  def index
-  end
+	include SessionsHelper
+	include CalendarHelper
+  
+  	def index
+		@dates = get_week
+	end
+
 end

@@ -9,6 +9,9 @@
 		<th>Friday</th>
 		<th>Saturday</th>
 	</tr>
+	<tr class="table-header">
+		<%= @dates %>
+	</tr>
 
 	<% (0..27).each do |i| %>
 		<% if (i % 2 == 0) %>
