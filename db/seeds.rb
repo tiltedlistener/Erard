@@ -7,11 +7,10 @@
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
 # Create Default Users
-User.create(:name => "Corey", :email => "tiltedlistener@gmail.com", :password => "Vat0Natt01", :timezone => '2')
-User.create(:name => "Carrie", :email => "capurcell@gmail.com", :password => "Vat0Natt01", :timezone => '2')
+User.create(:name => "Corey", :email => "corey@ckplusplus.com", :password => "ThisIsAPassword", :timezone => '2')
 
 # Create
-Student.create(:name => "Keenan Taco")
+Student.create(:name => "Brian Kernighan")
 
 # Create default roles
 Role.create(:rid => 1, :type =>'user')
